@@ -1,5 +1,5 @@
 ##OCR GCSE COMPUTING
-#A452 Practical Investigation CONTROLLED ASSESSMENT MATERIAL 3
+#A452 Practical Investigation
 ---
 NOT FOR PUBLIC USE
 
