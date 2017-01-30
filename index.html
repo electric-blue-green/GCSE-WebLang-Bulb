@@ -6,109 +6,101 @@
   <title>JS Bin</title>
 </head>
 <body>
-<!--
-red on: red
-red off: 49180d
-amber on: orange
-amber off 8f7414
-green on: green
-green off: 0d4913
--->
-<style>
-  body {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-align-content: center;
-    align-content: center;
-    padding: 0;
-    margin: 0;
-    min-height: 100vH;
-    background: linear-gradient(#2ebbb0, #41bae7);
-    background-size: 100% 100vH
-  }
-  .container>ul{
-    list-style: none;
-    padding: 0px;
-  }
-  .container {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-align-content: center;
-    align-content: center;
-    margin: auto;
-  }
-  .panel {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-align-content: wrap;
-    align-content: wrap;
-    margin: auto;
-    background-color: black;
-    justify-content: center;
-  }
-  .panel>ul{
-    list-style: none;
-    padding: 0px;
-  }
-  .flexItem {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-align-content: center;
-    align-content: center;
-    margin: 10px;
-    border-radius: 50%;
-  }
-  .button {
-    background-color: #00c800;
-    color: white;
-    font-size: 30px;
-    border-radius: 10px;
-    border: 0;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-align-content: center;
-    align-content: center;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-style: solid;
-    margin-bottom: 8px;
-  }
-  .button:hover{
-    background-color: #009100;
-  }
-  .red{
-    background-color: #49180d;
-  }
-  .amber{
-    background-color: #8f7414;
-  }
-  .green{
-    background-color: #0d4913;
-  }
-</style>
-<div class="container">
-  <ul>
-    <button id="button" class="button" onclick="lightchange(lightstate)">Toggle Lights</button>
-    <div class="panel">
-      <ul style="list-style-type:none">
-        <li id="red" class="flexItem red"></li>
-        <li id="amber" class="flexItem amber"></li>
-        <li id="green" class="flexItem green"></li>
-      </ul>
-    </div>
-  </ul>
-</div>
+  <style>
+    body {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-align-content: center;
+      align-content: center;
+      padding: 0;
+      margin: 0;
+      min-height: 100vH;
+      background: linear-gradient(#2ebbb0, #41bae7);
+      background-size: 100% 100vH
+    }
+    .container>ul{
+      list-style: none;
+      padding: 0px;
+    }
+    .container {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-align-content: center;
+      align-content: center;
+      margin: auto;
+    }
+    .panel {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-align-content: wrap;
+      align-content: wrap;
+      margin: auto;
+      background-color: black;
+      justify-content: center;
+    }
+    .panel>ul{
+      list-style: none;
+      padding: 0px;
+    }
+    .flexItem {
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-align-content: center;
+      align-content: center;
+      margin: 10px;
+      border-radius: 50%;
+    }
+    .button {
+      background-color: #00c800;
+      color: white;
+      font-size: 30px;
+      border-radius: 10px;
+      border: 0;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-align-content: center;
+      align-content: center;
+      -webkit-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      border-style: solid;
+      margin-bottom: 8px;
+    }
+    .button:hover{
+      background-color: #009100;
+    }
+    .red{
+      background-color: #49180d;
+    }
+    .amber{
+      background-color: #8f7414;
+    }
+    .green{
+      background-color: #0d4913;
+    }
+  </style>
+  <div class="container">
+    <ul>
+      <button id="button" class="button" onclick="lightchange(lightstate)">Toggle Lights</button>
+      <div class="panel">
+        <ul style="list-style-type:none">
+          <li id="red" class="flexItem red"></li>
+          <li id="amber" class="flexItem amber"></li>
+          <li id="green" class="flexItem green"></li>
+        </ul>
+      </div>
+    </ul>
+  </div>
 </body>
 <script>
 var status = 1;
@@ -155,11 +147,24 @@ var lightstate = 0;
 </html>
 
 
+<!--    NOTES     -->
+
+<!--    Colour Palette     -->
+<!--
+    red on: red
+    red off: 49180d
+    amber on: orange
+    amber off 8f7414
+    green on: green
+    green off: 0d4913
+                      -->
 
 
-<!--Bibliography
+<!--    Bibliography     -->
+<!--
+    Text Alignment        http://www.w3schools.com/cssref/pr_text_text-align.asp
+    Flex Boxes            http://www.w3schools.com/css/css3_flexbox.asp
+    Flex Content Justify  https://www.kirupa.com/html5/centering_vertically_horizontally.htm
+    Flex Content Align    https://davidwalsh.name/css-vertical-center-flexbox
 
-Text Alignment        http://www.w3schools.com/cssref/pr_text_text-align.asp
-Flex Boxes            http://www.w3schools.com/css/css3_flexbox.asp
-Flex Content Justify  https://www.kirupa.com/html5/centering_vertically_horizontally.htm
-Flex Content Align    https://davidwalsh.name/css-vertical-center-flexbox
+                                                                                            -->
