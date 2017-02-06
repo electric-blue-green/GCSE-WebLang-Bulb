@@ -43,6 +43,10 @@
       margin: auto;
       background-color: black;
       justify-content: center;
+      border-radius: 6px;
+      border-color: white;
+      border-width: 14px;
+      border-style: solid;
     }
     .panel>ul{
       list-style: none;
@@ -61,7 +65,7 @@
       border-radius: 50%;
     }
     .button {
-      background-color: #00c800;
+      background-color: g;
       color: white;
       font-size: 30px;
       border-radius: 10px;
@@ -77,10 +81,10 @@
       margin-bottom: 8px;
     }
     .button:hover{
-      background-color: #009100;
+      background-color: gra;
     }
     .red{
-      background-color: #49180d;
+      background-color: red;
     }
     .amber{
       background-color: #8f7414;
@@ -91,7 +95,7 @@
   </style>
   <div class="container">
     <ul>
-      <button id="button" class="button" onclick="lightchange(lightstate)">Toggle Lights</button>
+      <button id="button" class="button" onclick="">....Toggle....</button>
       <div class="panel">
         <ul style="list-style-type:none">
           <li id="red" class="flexItem red"></li>
@@ -115,12 +119,10 @@
       lightstate = 2;
     }
     else if (lightstate == 2){
-      lightstate2();
-      lightstate = 3;
+      setTimeout(function() {lightstate2(); lightstate = 3}, 5000)
     }
     else if (lightstate == 3){
-      lightstate3();
-      lightstate = 0;
+      setTimeout(function() {lightstate3(); lightstate = 0}, 5000)
     }
   }
   function lightstate0(){
@@ -143,6 +145,9 @@
     document.getElementById("amber").style.backgroundColor = 'orange';
     document.getElementById("green").style.backgroundColor = '#0d4913';
   }
+  var lightsInterval = setInterval(function() {
+    lightchange();
+  }, 5000) //miliseconds
 </script>
 </html>
 
