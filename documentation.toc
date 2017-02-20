@@ -1,3 +1,3 @@
 \select@language {english}
 \contentsline {section}{\numberline {1}Task 1}{3}
-\contentsline {paragraph}{Explain how you ran this script:}{3}
+\contentsline {subsection}{\numberline {1.1}Explain how you ran this script:}{3}
