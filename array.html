@@ -20,19 +20,16 @@
     }
   </style>
 
-  <h3>Alphabetical:</h1>
-  <body>
+  <h3>Alphabetical:</h3>
+
   <script>
+    var products = ["Printer","Tablet","Router","Network Switch","Monitor","Keyboard","Mouse","500GB Hard Drive","ATX Motherboard","Memory Card","Flash Drive","Network Switch","Bluetooth Adaptor","Modem","Wireless Speaker"];
     function sortProducts(){
-    var products = ["Printer","Tablet","Router","Network Switch","Monitor","Keyboard","Mouse","500GB Hard Drive"];
       document.write(products.sort().join('<br/>'));
     }
     sortProducts();
   </script>
-  </body>
-
   <h3>Reverse Alphabetical:</h3>
-  <body>
   <script>
     function sortProductsReverse(){
       products.sort();
@@ -40,6 +37,5 @@
     }
     sortProductsReverse();
   </script>
-</body>
 </body>
 </html>
