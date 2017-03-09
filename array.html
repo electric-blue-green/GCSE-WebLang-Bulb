@@ -25,17 +25,25 @@
   <script>
     var products = ["Printer","Tablet","Router","Network Switch","Monitor","Keyboard","Mouse","500GB Hard Drive","ATX Motherboard","Memory Card","Flash Drive","Network Switch","Bluetooth Adaptor","Modem","Wireless Speaker"];
     function sortProducts(){
-      document.write(products.sort().join('<br/>'));
+      temp = products.sort();
+      document.write(temp.join('<br/>'));
     }
     sortProducts();
   </script>
   <h3>Reverse Alphabetical:</h3>
   <script>
     function sortProductsReverse(){
-      products.sort();
-      document.write(products.reverse().join('<br/>'));
+      temp = products.sort();
+      document.write(temp.reverse().join('<br/>'));
     }
     sortProductsReverse();
+  </script>
+  <h3>Length of Array:</h3>
+  <script>
+    function printLength(){
+      document.write(products.length);
+    }
+    printLength()
   </script>
 </body>
 </html>
