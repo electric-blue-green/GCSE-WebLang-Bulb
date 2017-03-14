@@ -13,3 +13,4 @@
 \contentsline {subsubsection}{\numberline {2.2.1}Outputs the items in alphabetical order}{5}
 \contentsline {subsubsection}{\numberline {2.2.2}Counts the number of items in the array.}{6}
 \contentsline {subsubsection}{\numberline {2.2.3}Full code:}{6}
+\contentsline {subsubsection}{\numberline {2.2.4}Output:}{7}
