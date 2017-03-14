@@ -127,7 +127,7 @@
     .buttonTitle{
       text-align: center;
       color: white;
-      font-size: 27px;
+      font-size: 27spx;
     }
   </style>
   <div class="container">
@@ -166,10 +166,12 @@
       lightstate = 2;
     }
     else if (lightstate == 2){
-      setTimeout(function() {lightstate2(); lightstate = 3}, window.intervalTime)
+      lightstate2()
+      lightstate = 3;
     }
     else if (lightstate == 3){
-      setTimeout(function() {lightstate3(); lightstate = 0}, window.intervalTime)
+      lightstate3()
+      lightstate = 0;
     }
     setTimeout(function(){lightchange()}, window.intervalTime)
   }
