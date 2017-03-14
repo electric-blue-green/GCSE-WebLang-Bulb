@@ -10,8 +10,10 @@
 \usepackage{tabu}
 \usepackage{listings}
 \usepackage[export]{adjustbox}
-\graphicspath{{/Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-Q3-TrafficLights/Images/}}
-%%\DeclareGraphicsExtensions{.png}
+\graphicspath{{/Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/}}
+\DeclareGraphicsExtensions{.png}
+
+
 
 
 \title{Computing GCSE Coursework}
@@ -61,7 +63,7 @@ Bring me back!</button>
 This script was copied into a HTML document, and opened into a web browser. 
 
 When the script ran it gave the following output: ~\par ~\par
-\noindent\includegraphics[width=0.5\textwidth, left, width=\linewidth, frame]{Picture1.png} \par 
+\noindent\includegraphics[width=0.5\textwidth, left, width=\linewidth, frame]{Picture1.png}
 
 The web page took the code entered, ran it, and produced this output.
 \newpage
@@ -116,9 +118,32 @@ The web page took the code entered, ran it, and produced this output.
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Task 2}
-As is the case with most programming languages, in JavaScript you can use arrays in order to store multiple values under the same identifier. For example, an array of products can be set up as below for use on an ecommerce web site.\par  \verb|var products = ["Printer","Tablet","Router"];|
+As is the case with most programming languages, in JavaScript you can use arrays in order to store multiple values under the same identifier. For example, an array of products can be set up as below for use on an ecommerce web site.\par
+  \verb|var products = ["Printer","Tablet","Router"];|
 
 \subsection{Set up an array to include the items shown above, plus a few extras of your choice.}
+\subsubsection{Products:}
+Printer, Tablet, Router, Network Switch, Monitor, Keyboard, Mouse, 500GB Hard Drive, ATX Motherboard, Memory Card, Flash Drive, Network Switch, Bluetooth Adaptor, Modem, Wireless Speaker, 256GB SSD.
+\subsubsection{Array:} 
+\begin{lstlisting}
+var products = ["Printer","Tablet","Router","Network Switch","Monitor",
+"Keyboard","Mouse","500GB Hard Drive","ATX Motherboard","Memory Card",
+"Flash Drive","Network Switch","Bluetooth Adaptor","Modem",
+"Wireless Speaker", "256GB SSD"];
+\end{lstlisting}
+=16 items
+
+\subsubsection{Array in code editor:}
+\noindent\includegraphics[width=1\textwidth, left, width=\linewidth, frame]{Picture2.png}
+
+\subsection{Write a script that:}
+\subsubsection{Outputs the items in alphabetical order}
+\noindent\includegraphics[width=1\textwidth, left, width=\linewidth, frame]{Picture3.png} \par
+This code snippet is written in JS embedded in an HTML document. Line 25 opens the \verb|<script>| tag, which indicates to the HTML code that the following is JS script. Lines 26 to 28 then declares \verb|products| to be a global array with the contents as described in part 2.1. Line 29 declares \verb|sortProducts()| to be a function, and opens the code for the function. Line 30 declares \verb|temp| to be the array \verb|products|, sorted alphabetically with the \verb|.sort| function built into JS. Line 31 then outputs the \verb|temp| array, joined by a \verb|<br>| line break, onto the document body with the \verb|.write| function. Line 32 closes the code for the \verb|sortProducts()| function, and Line 33 calls the \verb|sortProducts()| function its self. Line 34 then closes the \verb|<script>| tag, indicating the end of this JS script. \newpage
+\subsubsection{Counts the number of items in the array.}
+\noindent\includegraphics[width=0.4\textwidth, left]{Picture4.png} \par
+This code snippet is again written in JS, and embedded in the same HTML document as in 2.2.1. Line 36 opens the \verb|script| tag to declare the following as JS code. Line 37 then declares \verb|printLength()| to be a function, and opens the code for the function. Line 38 outputs the length of the array with the built-in \verb|.length| function, and writes it to the body with \verb|.write|.  The code is then closed in line 39, and the \verb|printLength()| function is called in line 40. Line 41 then closes the \verb|<script>| tag to show the end of the JS script.
+\subsubsection{Full code:}
 
 
 

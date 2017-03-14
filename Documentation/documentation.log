@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.31)  6 MAR 2017 10:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.31)  14 MAR 2017 11:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -541,18 +541,18 @@ Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
 (./documentation.aux)
 \openout1 = `documentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -637,8 +637,7 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
 Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
+(grfext)             [.png,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
@@ -647,11 +646,11 @@ e
 ))
 \c@lstlisting=\count116
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 31.
+(Font)              <12> on input line 33.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 31.
+(Font)              <8> on input line 33.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 31.
+(Font)              <6> on input line 33.
 
 [1
 
@@ -666,103 +665,149 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout3 = `documentation.toc'.
 
  [2]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 43.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 45.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 43.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 45.
 
-</Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-Q3-TrafficLights/Images/Pictu
-re1.png, id=15, 957.5775pt x 807.015pt>
-File: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-Q3-TrafficLights/Images/
-Picture1.png Graphic file (type png)
+</Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Picture1
+.png, id=15, 957.5775pt x 807.015pt>
+File: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pic
+ture1.png Graphic file (type png)
 
-<use /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-Q3-TrafficLights/Images/P
-icture1.png>
-Package pdftex.def Info: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-Q3-Tr
-afficLights/Images/Picture1.png used on input line 64.
+<use /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pict
+ure1.png>
+Package pdftex.def Info: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-Traff
+icLights/Images/Picture1.png used on input line 66.
 (pdftex.def)             Requested size: 226.48395pt x 190.86763pt.
 
-Overfull \hbox (0.82762pt too wide) in paragraph at lines 64--64
+Overfull \hbox (0.82762pt too wide) in paragraph at lines 66--67
 [] 
  []
 
-[3 </Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-Q3-TrafficLights/Images/Pi
-cture1.png (PNG copy)>]
-Overfull \hbox (15.03687pt too wide) in paragraph at lines 94--95
+[3 </Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pictu
+re1.png (PNG copy)>]
+Overfull \hbox (15.03687pt too wide) in paragraph at lines 96--97
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (27.03697pt too wide) in paragraph at lines 96--97
+Overfull \hbox (27.03697pt too wide) in paragraph at lines 98--99
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (15.03687pt too wide) in paragraph at lines 97--98
+Overfull \hbox (15.03687pt too wide) in paragraph at lines 99--100
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (45.03716pt too wide) in paragraph at lines 100--101
+Overfull \hbox (45.03716pt too wide) in paragraph at lines 102--103
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (27.03699pt too wide) in paragraph at lines 101--102
+Overfull \hbox (27.03699pt too wide) in paragraph at lines 103--104
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (63.03735pt too wide) in paragraph at lines 102--103
+Overfull \hbox (63.03735pt too wide) in paragraph at lines 104--105
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][] 
  []
 
 
-Overfull \hbox (15.03685pt too wide) in paragraph at lines 103--104
+Overfull \hbox (15.03685pt too wide) in paragraph at lines 105--106
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (45.03716pt too wide) in paragraph at lines 107--108
+Overfull \hbox (45.03716pt too wide) in paragraph at lines 109--110
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (27.03699pt too wide) in paragraph at lines 108--109
+Overfull \hbox (27.03699pt too wide) in paragraph at lines 110--111
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (45.03716pt too wide) in paragraph at lines 111--112
+Overfull \hbox (45.03716pt too wide) in paragraph at lines 113--114
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[4] [5] (./documentation.aux) ) 
+[4]
+</Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Picture2
+.png, id=23, 1511.6475pt x 112.42pt>
+File: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pic
+ture2.png Graphic file (type png)
+
+<use /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pict
+ure2.png>
+Package pdftex.def Info: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-Traff
+icLights/Images/Picture2.png used on input line 137.
+(pdftex.def)             Requested size: 452.9679pt x 33.6868pt.
+
+Overfull \hbox (0.82762pt too wide) in paragraph at lines 137--138
+[] 
+ []
+
+
+</Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Picture3
+.png, id=24, 1521.685pt x 367.3725pt>
+File: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pic
+ture3.png Graphic file (type png)
+
+<use /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pict
+ure3.png>
+Package pdftex.def Info: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-Traff
+icLights/Images/Picture3.png used on input line 141.
+(pdftex.def)             Requested size: 452.9679pt x 109.35492pt.
+
+Overfull \hbox (0.82762pt too wide) in paragraph at lines 141--141
+[] 
+ []
+
+[5 </Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pictu
+re2.png (PNG copy)> </Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLi
+ghts/Images/Picture3.png (PNG copy)>]
+</Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Picture4
+.png, id=29, 668.4975pt x 218.8175pt>
+File: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pic
+ture4.png Graphic file (type png)
+
+<use /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pict
+ure4.png>
+Package pdftex.def Info: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-Traff
+icLights/Images/Picture4.png used on input line 144.
+(pdftex.def)             Requested size: 181.18439pt x 59.3052pt.
+ [6 </Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pict
+ure4.png (PNG copy)>] (./documentation.aux) ) 
 Here is how much of TeX's memory you used:
- 6194 strings out of 493014
- 84966 string characters out of 6133351
- 202864 words of memory out of 5000000
- 9638 multiletter control sequences out of 15000+600000
+ 6209 strings out of 493014
+ 86028 string characters out of 6133351
+ 203729 words of memory out of 5000000
+ 9650 multiletter control sequences out of 15000+600000
  8063 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,10n,43p,303b,1210s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2016/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmtt10.pfb>
-Output written on documentation.pdf (5 pages, 130745 bytes).
+ 38i,10n,43p,894b,1210s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2016/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmtt10.pfb>
+Output written on documentation.pdf (6 pages, 303995 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 59 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
