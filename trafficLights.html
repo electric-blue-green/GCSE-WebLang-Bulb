@@ -82,6 +82,39 @@
       border-style: solid;
       margin-bottom: 8px;
     } 
+    .stop {
+      background-color: black;
+      color: white;
+      font-size: 30px;
+      border-radius: 10px;
+      border: 0;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-align-content: center;
+      align-content: center;
+      -webkit-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      border-style: solid;
+      margin-bottom: 8px;
+      text-align: center; 
+    } 
+     .wait {
+      background-color: black;
+      color: gray;
+      font-size: 30px;
+      border-radius: 10px;
+      border: 0;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-align-content: center;
+      align-content: center;
+      border-style: solid;
+      margin-bottom: 8px;
+      text-align: center; 
+      font-family: bold;
+      font-size: 40px;
+    } 
     .red{
       background-color: red;
     }
@@ -124,6 +157,15 @@
       color: white;
       font-size: 27spx;
     }
+    .stopInfo{
+      text-align: center;
+      font-size: 19px;
+    }
+    .StopButton{
+      background-color: black;
+      color: white;
+      border-radius: 8px;
+    }
   </style>
   <div class="container">
     <ul>
@@ -135,6 +177,12 @@
           <li id="green" class="flexItem green"></li>
         </ul>
       </div>
+      <br>
+      <div class="StopButton">
+      <p id="stopInfo" class="stopInfo">Push button <br> Wait for signal</p>
+      <button id="wait" class="wait" onclick="">...WAIT...</button><br>
+      <button id="stop" class="stop" onclick="stopLights()">Stop Button</button>  
+      </div>
     </ul>
   </div>
   <div class="inputContainer">
@@ -145,17 +193,33 @@
   </div>
 </body>
 <script>
+  var tempInterval = 0
+  var stopNow = false;
+  function stopLights(){
+    document.getElementById("wait").style.color = CustomColor[2];
+    window.stopNow = true;
+  }
   var CustomColor = ["red", "#49180d", "orange", "#8f7414", "#00af1b", "#0d4913"]
   var intervalTime = 5000;
   function inputPrompt(){
-    window.intervalTime = prompt("Enter timer interval (milliseconds)", window.intervalTime);
+    window.intervalTime = prompt("Enter timer interval (milliseconds)", window.intervalTime)
   }
   var status = 1;
   var lightstate = 0;
   function lightchange(){
     if (lightstate == 0){
+      if (stopNow == true){
+        tempInterval = intervalTime;
+        intervalTime = 1000;
+        lightstate0();
+        lightstate = 1;
+        intervalTime = tempInterval;
+        stopNow = false;
+      }
+      else if (stopNow == false){
       lightstate0();
       lightstate = 1;
+      }
     }
     else if (lightstate == 1){
       lightstate1();
@@ -196,7 +260,23 @@
 </html>
 
 
-<!--    NOTES     -->
+<!--    NOTES  
+
+
+
+      if (stopNow == true){
+        intervalTime = 5000
+        //document.write("foo")
+        lightstate = 1;
+        stopNow = false 
+      }
+      else if (window.stopNow == false){
+        lightstate0();
+        lightstate = 1;
+      }
+      
+      
+         -->
 
 <!--    Colour Palette     -->
 <!--
