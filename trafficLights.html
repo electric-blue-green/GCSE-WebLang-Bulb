@@ -209,12 +209,11 @@
   function lightchange(){
     if (lightstate == 0){
       if (stopNow == true){
-        tempInterval = intervalTime;
         intervalTime = 1000;
         lightstate0();
         lightstate = 1;
-        intervalTime = tempInterval;
         stopNow = false;
+        intervalTime = 200;
       }
       else if (stopNow == false){
       lightstate0();
