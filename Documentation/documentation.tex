@@ -17,7 +17,7 @@
 
 
 \title{Computing GCSE Coursework}
-\author{\\ \\ \\ \\ Thomas Bass\\Candidate 4869\\Centre 52423\\OCR A452 Practical Investication\\\\Made with \LaTeX}
+\author{\\ \\ \\ \\ Thomas Bass\\Candidate 4869\\Centre 52423\\OCR A452 Practical Investication\\\\Word Count: 915\\\\Made with \LaTeX}
 \date{2017}
 
 
@@ -148,7 +148,29 @@ This code snippet is again written in JS, and embedded in the same HTML document
 \subsubsection{Output:}
 \noindent\includegraphics[width=1\textwidth, left, width=\linewidth, frame]{Picture6.png} \par \newpage
 
-
+\section{Task 5}
+Scripts can be embedded in the HTML of web pages or saved externally as script files. Discuss the benefits and drawbacks of each approach.
+\subsection{Embedded JS Scripts}
+JavaScript functions can easily be embedded into an HTML document, like I've done in tasks 3 and 4. In HTML, the \verb|<script>| tag opens the area for JS code, but must be closed afterwards. For example, a button can have the \verb|onclick()| event for \verb|change()|, which will call the \verb|change()| function in the JavaScript area. For a demo, I used jsbin.com, a website where you can write and run HTML, JS and CSS code embedded or in a separate area. I entered the following demo code: \par
+\noindent\includegraphics[width=0.7\textwidth, left, width=\linewidth, frame]{Picture7.png}
+On the click of the button with id of \verb|button|, the \verb|change()| function will be called from the \verb|<script>| area. The function changes the color of the element with ID of \verb|button| to blue and changes the body background to blue. The first lines inside the \verb|<head>| tag and with the \verb|<meta>| tags is just information about the document and is irrelevant to the task. This was the output before the button was clicked: \par
+\noindent\includegraphics[width=1\textwidth, left, width=\linewidth, frame]{Picture8.png}\par \newpage
+And this was the output after the button was clicked: \par
+\noindent\includegraphics[width=1\textwidth, left, width=\linewidth, frame]{Picture9.png}
+This clearly show that the embedded script can easily change the style of HTML elements. This could be adapted to change position, size, and any other attribute. \newpage
+\subsection{External JS Scripts}
+The same effect as in 3.1 can be made with externally saved scripts. Alongside the HTML file (normally named \verb|index.html|) the JS file can be saved (normally named \verb|script.js|. In this scenario, the CSS styling is also saved externally, rather than embedded as the \verb|<style>| tag, normally as \verb|style.css|. I adapted the demo code in 3.1 to show this. \par
+\noindent\includegraphics[width=0.7\textwidth, left, width=\linewidth, frame]{Picture10.png}
+This is the HTML code, which is the same as before in 3.1, but with the \verb|<script>| code removed. This document is now entirely HTML. The JS was moved to the external file: \par
+\noindent\includegraphics[width=0.7\textwidth, left, width=\linewidth, frame]{Picture11.png}
+This shows the \verb|change()| function moved to the external file. This program will operate in the exact same way, as the files are both saved in the same location. Here is the output before the button was clicked: \par
+\noindent\includegraphics[width=1\textwidth, left, width=\linewidth, frame]{Picture12.png} 
+And this is the output after the button was clicked: \par
+\noindent\includegraphics[width=1\textwidth, left, width=\linewidth, frame]{Picture13.png} 
+As you can see, this produces the exact same results. So what are the benefits and drawbacks of each approach? \par \par
+The embedded script approach is more suitable to small projects, such as a personal portfolio or small website. Having it all saved to the same file can make it a lot easier to manage, as well as preserving consistency and ensuring no failures. However, for larger tasks like a web app or large website, external scripts are often more applicable. \par
+With an external script, pre-made code can be referenced from the HTML document and used elsewhere. This limits the size of the HTML document and makes it a lot tidier and easier to have consistent indentation. Websites like www.dynamicdrive.com offer scripts for both JS and CSS that can be embedded into the code easily. These off-the-shelf snippets are useful in small-scale webpages and can be embedded or saved externally, but are normally embedded. \par
+I prefer to use embedded scripts, as I often code small-scale projects and it is easier to have it all in the same document. However, if a project gets to large, I will move my JS and CSS to an external file for consistency, and to reduce the time it takes for a page to load.
 
 
 
