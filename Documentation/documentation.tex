@@ -148,6 +148,40 @@ This code snippet is again written in JS, and embedded in the same HTML document
 \subsubsection{Output:}
 \noindent\includegraphics[width=1\textwidth, left, width=\linewidth, frame]{Picture6.png} \par \newpage
 
+\section{Task 3}
+\subsection{(i) Make a list of assets that will be required in order to produce this display.}
+\begin{center}
+\begin{tabular}{ | m{9em} | m{10em} | m{15em} | m{8em} | }
+  \hline
+  Asset Name & Asset Type & Asset Description & Asset Properties	\\ [0.5ex] 
+  \hline \hline	
+  Traffic light frame & FlexBox Container & The frame for the traffic lights & Black with White border \\
+  \hline
+  Red traffic light & FlexBox Item & The red traffic light & Dimmed Red (\#49180d) \\
+  \hline
+  Amber traffic light & FlexBox Item & The amber traffic light & Dimmed Amber (\#8f7414) \\
+	\hline
+	Green traffic light & FlexBox Item & The green traffic light & Dimmed Green (\#0d4913) \\
+	\hline
+	Traffic Light Label & Button & A label for the traffic light, and to help FlexBox spacing & No OnClick event, grey \\
+	\hline
+	Wait signal box & FlexBox Container & The frame for the pedestrian wait button & Black \\
+	\hline
+	Wait signal button & Button & The button to stop the lights for a pedestrian & Black \\
+	\hline
+	Interval change container & FlexBox Container & The container for the interval change button and text & Invisible \\
+	\hline
+	Interval change button & Button & Button to call the interval time change dialogue box & \#1fadcf \\
+	\hline
+\end{tabular}
+\end{center}
+\subsection{(ii) Describe and explain where the assets will be best located.}
+For this task, as it is a small, single page website, all the scripts and styles will be embedded into the HTML document. The objects will be arranged in \verb|<div>| structures, and items will be inside FlexBoxes.
+FlexBoxes are a CSS Layout style, where flexible boxes contain items. This means that the objects are dynamically aligned, and no positioning is fixed or absolute. This makes it usable on mobile devices as well as a range of screen sizes. It is also adaptable, and easy to adjust. My reaserch primerially came from the W3Schools page on FlexBoxes: http://www.w3schools.com/css/css3_flexbox.asp
+
+\section{Task 4}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Task 5}
 Scripts can be embedded in the HTML of web pages or saved externally as script files. Discuss the benefits and drawbacks of each approach.
 \subsection{Embedded JS Scripts}
