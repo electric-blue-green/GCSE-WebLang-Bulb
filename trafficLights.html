@@ -194,10 +194,10 @@
 </body>
 <script>
   var tempInterval = 0
-  var stopNow = false;
+  var stopNow = 0;
   function stopLights(){
     document.getElementById("wait").style.color = CustomColor[2];
-    window.stopNow = true;
+    window.stopNow = 1;
   }
   var CustomColor = ["red", "#49180d", "orange", "#8f7414", "#00af1b", "#0d4913"]
   var intervalTime = 5000;
@@ -206,31 +206,32 @@
   }
   var status = 1;
   var lightstate = 0;
+  var pedestrianTime = 3;
   function lightchange(){
-    if (lightstate == 0){
-      if (stopNow == true){
-        intervalTime = 1000;
+    if (stopNow != 0 && stopNow != Math.ceil(pedestrianTime*1000/window.intervalTime)+1 && lightstate == 1 ){
+      stopNow += 1;
+    } else {
+      if(stopNow != 1) {
+        // RESET ME
+        document.getElementById("wait").style.color = "#ececec";
+        stopNow = 0;
+      }
+      if (lightstate == 0){
         lightstate0();
         lightstate = 1;
-        stopNow = false;
-        intervalTime = 200;
       }
-      else if (stopNow == false){
-      lightstate0();
-      lightstate = 1;
+      else if (lightstate == 1){
+        lightstate1();
+        lightstate = 2;
       }
-    }
-    else if (lightstate == 1){
-      lightstate1();
-      lightstate = 2;
-    }
-    else if (lightstate == 2){
-      lightstate2()
-      lightstate = 3;
-    }
-    else if (lightstate == 3){
-      lightstate3()
-      lightstate = 0;
+      else if (lightstate == 2){
+        lightstate2()
+        lightstate = 3;
+      }
+      else if (lightstate == 3){
+        lightstate3()
+        lightstate = 0;
+      }
     }
     setTimeout(function(){lightchange()}, window.intervalTime)
   }
