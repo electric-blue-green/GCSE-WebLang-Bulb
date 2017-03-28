@@ -212,7 +212,9 @@ Put into an array, this would be: \par
 \verb|var CustomColor = ["#ff0000", "#49180d", "#fda428", "#8f7414", "#00af1b", "#0d4913"]|
 For simplicity, the Red On and Amber On have been substituted for their HTML default colours, \verb|red| and \verb|orange| \par
 \noindent\includegraphics[width=0.7\textwidth, left,]{Picture15.png}
-\subsection{(iv) Write a script that uses the array described in part 3.3 to produce an animation of a set oftraffic lights such that the lights change in the standard sequence each time the button isclicked.}
+\subsection{(iv) Write a script that uses the array described in part 3.3 to produce an animation of a set of
+traffic lights such that the lights change in the standard sequence each time the button is
+clicked.}
 \subsubsection{Traffic Light Sequence}
 Firstly, I worked out the sequence of the traffic lights. The sequence is as follows:
 \begin{center}
@@ -240,7 +242,15 @@ For the layout, I used \verb|div| hierarchies to lay out the elements as seen in
 The two containers, Left side container and Right side container, are opened in Line 3 and Line 21 with the classes "container" and "inputContainer" respectively. \par
 Inside the Left side container, an unordered list (\verb|<ul>|) to contain the Traffic Light Label (id = "button"), the \verb|<div>| for the Traffic light frame (id = "panel") and the 	Wait signal box (id = "StopButton"). Inside the Traffic light frame, is another \verb|<ul>| for the 3 lights, with id = "red" "amber" and "green", and classes of "flexItem". Inside the Wait signal box, is the paragraph text (id = "stopInfo") for the label, the wait light (id = "wait") and the wait button (id = "stop"). \par
 Inside the Right side container is the \verb|<ul>| for the label (id = "buttonTitle") and the input button (id = "inputButton").
-\subsubsection{Styling}
+\subsubsection{Styling and Layout}
+Task 3 only requires a button to change Iterations, so the automatic code, interval change, and wait button elements will be ignored until they are needed in Task 4. As FlexBox requires on CSS, the styling will also be embedded. Here is the standard, un-styled code for the traffic lights: \par
+\paragraph{Body and \#container}
+~\par
+\noindent\includegraphics[width=0.5\textwidth, left]{Picture18.png}
+The body styles for the WebKit Flex Wrap in Lines 11-15, content is aligned centre in Line 16, and Lines 17-20 code for no padding or margins, and 100\% width. \#container\textgreater ul codes for the \verb|<ul>| inside the container. It codes for no list style, and 100\% width. The \#container codes for the WebKit Flex Align and automatic margins and alignment. \newpage
+\paragraph{\#panel, \#flexItem and \#button}
+~\par
+\noindent\includegraphics[width=0.5\textwidth, left]{Picture19.png}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{Task 4}

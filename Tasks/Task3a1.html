@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+<!--<canvas id="myCanvas" style="border:0px solid #000000;"></canvas>--> 
+  <style>
+    
+    body {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-align-content: center;
+      align-content: center;
+      padding: 0;
+      margin: 0;
+      min-height: 100vH;
+    }
+    
+    #container>ul{
+      list-style: none;
+      padding: 0px;
+    }
+    
+    #container {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-align-content: center;
+      align-content: center;
+      margin: auto;
+    }
+    
+    #panel>ul{
+      list-style: none;
+      padding: 0px;
+    }
+    
+    #panel {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-align-content: center;
+      align-content: center;
+      margin: auto;
+      background-color: lightgrey;
+    }
+    
+    #flexItem {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+    margin: 10px;
+    }
+    
+    
+    #button1 {
+      background-color: gray; 
+      color: white; 
+      font-size: 40px; 
+      border-radius: 10px; 
+      border: 0; 
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-align-content: center;
+      align-content: center;
+      -webkit-transition-duration: 0.4s; 
+      transition-duration: 0.4s; 
+      cursor: pointer; 
+      border-style: solid; 
+      margin-bottom: 8px;
+    }
+    
+    #button1:hover{
+      background-color: #009100; 
+    }
+  </style>
+<div id="container">
+  <ul>
+    <button id="button1" type="button" onclick="toggle()">button</button>
+    <div id="panel">
+      <ul style="list-style-type:none">
+        <li id="flexItem">flex item 1</li>
+        <li id="flexItem">flex item 2</li>
+        <li id="flexItem">flex item 3</li>  
+      </ul>
+    </ul>
+  </div>
+</div>
+</body>
+
+</html>

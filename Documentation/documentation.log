@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.31)  28 MAR 2017 11:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.31)  28 MAR 2017 16:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -933,131 +933,155 @@ icLights/Images/Picture17.png used on input line 241.
 (pdftex.def)             Requested size: 452.9679pt x 242.74434pt.
  [10 </Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pic
 ture16.png> </Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Ima
-ges/Picture17.png>] [11] [12]
+ges/Picture17.png>]
+</Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Picture1
+8.png, id=57, 398.48875pt x 434.62375pt>
+File: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pic
+ture18.png Graphic file (type png)
+
+<use /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pict
+ure18.png>
+Package pdftex.def Info: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-Traff
+icLights/Images/Picture18.png used on input line 249.
+(pdftex.def)             Requested size: 226.48395pt x 247.02187pt.
+ [11 </Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pic
+ture18.png>]
+</Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Picture1
+9.png, id=62, 423.5825pt x 816.04875pt>
+File: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pic
+ture19.png Graphic file (type png)
+
+<use /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pict
+ure19.png>
+Package pdftex.def Info: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-Traff
+icLights/Images/Picture19.png used on input line 253.
+(pdftex.def)             Requested size: 226.48395pt x 436.3265pt.
+ [12 </Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pic
+ture19.png>] [13]
 </Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Picture7
-.png, id=63, 552.0625pt x 281.05pt>
+.png, id=71, 552.0625pt x 281.05pt>
 File: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pic
 ture7.png Graphic file (type png)
 
 <use /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pict
 ure7.png>
 Package pdftex.def Info: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-Traff
-icLights/Images/Picture7.png used on input line 256.
+icLights/Images/Picture7.png used on input line 264.
 (pdftex.def)             Requested size: 317.07614pt x 161.42665pt.
-
-Overfull \hbox (0.82762pt too wide) in paragraph at lines 256--257
-[]
- []
-
-
-</Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Picture8
-.png, id=64, 1284.8pt x 722.7pt>
-File: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pic
-ture8.png Graphic file (type png)
-
-<use /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pict
-ure8.png>
-Package pdftex.def Info: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-Traff
-icLights/Images/Picture8.png used on input line 258.
-(pdftex.def)             Requested size: 452.9679pt x 254.79037pt.
-
-Overfull \hbox (0.82762pt too wide) in paragraph at lines 258--258
-[] 
- []
-
-[13 </Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pict
-ure7.png> </Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Image
-s/Picture8.png>]
-</Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Picture9
-.png, id=71, 1284.8pt x 722.7pt>
-File: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pic
-ture9.png Graphic file (type png)
-
-<use /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pict
-ure9.png>
-Package pdftex.def Info: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-Traff
-icLights/Images/Picture9.png used on input line 260.
-(pdftex.def)             Requested size: 452.9679pt x 254.79037pt.
-
-Overfull \hbox (0.82762pt too wide) in paragraph at lines 260--261
-[]
- []
-
-[14 </Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pict
-ure9.png>]
-</Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Picture1
-0.png, id=76, 555.07375pt x 186.6975pt>
-File: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pic
-ture10.png Graphic file (type png)
-
-<use /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pict
-ure10.png>
-Package pdftex.def Info: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-Traff
-icLights/Images/Picture10.png used on input line 264.
-(pdftex.def)             Requested size: 317.07614pt x 106.64941pt.
 
 Overfull \hbox (0.82762pt too wide) in paragraph at lines 264--265
 []
  []
 
 
-</Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Picture1
-1.png, id=77, 553.06625pt x 69.25874pt>
+</Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Picture8
+.png, id=72, 1284.8pt x 722.7pt>
 File: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pic
-ture11.png Graphic file (type png)
+ture8.png Graphic file (type png)
 
 <use /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pict
-ure11.png>
+ure8.png>
 Package pdftex.def Info: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-Traff
-icLights/Images/Picture11.png used on input line 266.
-(pdftex.def)             Requested size: 317.07614pt x 39.70615pt.
+icLights/Images/Picture8.png used on input line 266.
+(pdftex.def)             Requested size: 452.9679pt x 254.79037pt.
 
-Overfull \hbox (0.82762pt too wide) in paragraph at lines 266--267
-[]
+Overfull \hbox (0.82762pt too wide) in paragraph at lines 266--266
+[] 
  []
 
-
-</Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Picture1
-2.png, id=78, 1284.8pt x 722.7pt>
+[14 </Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pict
+ure7.png> </Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Image
+s/Picture8.png>]
+</Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Picture9
+.png, id=78, 1284.8pt x 722.7pt>
 File: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pic
-ture12.png Graphic file (type png)
+ture9.png Graphic file (type png)
 
 <use /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pict
-ure12.png>
+ure9.png>
 Package pdftex.def Info: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-Traff
-icLights/Images/Picture12.png used on input line 268.
+icLights/Images/Picture9.png used on input line 268.
 (pdftex.def)             Requested size: 452.9679pt x 254.79037pt.
 
 Overfull \hbox (0.82762pt too wide) in paragraph at lines 268--269
 []
  []
 
+[15 </Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pict
+ure9.png>]
+</Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Picture1
+0.png, id=83, 555.07375pt x 186.6975pt>
+File: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pic
+ture10.png Graphic file (type png)
+
+<use /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pict
+ure10.png>
+Package pdftex.def Info: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-Traff
+icLights/Images/Picture10.png used on input line 272.
+(pdftex.def)             Requested size: 317.07614pt x 106.64941pt.
+
+Overfull \hbox (0.82762pt too wide) in paragraph at lines 272--273
+[]
+ []
+
 
 </Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Picture1
-3.png, id=79, 1284.8pt x 722.7pt>
+1.png, id=84, 553.06625pt x 69.25874pt>
+File: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pic
+ture11.png Graphic file (type png)
+
+<use /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pict
+ure11.png>
+Package pdftex.def Info: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-Traff
+icLights/Images/Picture11.png used on input line 274.
+(pdftex.def)             Requested size: 317.07614pt x 39.70615pt.
+
+Overfull \hbox (0.82762pt too wide) in paragraph at lines 274--275
+[]
+ []
+
+
+</Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Picture1
+2.png, id=85, 1284.8pt x 722.7pt>
+File: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pic
+ture12.png Graphic file (type png)
+
+<use /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pict
+ure12.png>
+Package pdftex.def Info: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-Traff
+icLights/Images/Picture12.png used on input line 276.
+(pdftex.def)             Requested size: 452.9679pt x 254.79037pt.
+
+Overfull \hbox (0.82762pt too wide) in paragraph at lines 276--277
+[]
+ []
+
+
+</Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Picture1
+3.png, id=86, 1284.8pt x 722.7pt>
 File: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pic
 ture13.png Graphic file (type png)
 
 <use /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pict
 ure13.png>
 Package pdftex.def Info: /Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-Traff
-icLights/Images/Picture13.png used on input line 270.
+icLights/Images/Picture13.png used on input line 278.
 (pdftex.def)             Requested size: 452.9679pt x 254.79037pt.
 
-Overfull \hbox (0.82762pt too wide) in paragraph at lines 270--271
+Overfull \hbox (0.82762pt too wide) in paragraph at lines 278--279
 []
  []
 
-[15 </Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pict
+[16 </Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/Pict
 ure10.png> </Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Imag
 es/Picture11.png> </Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLigh
-ts/Images/Picture12.png>] [16 </Users/ThomasBass/GitHub/GSCE-Coursework-Weblang
+ts/Images/Picture12.png>] [17 </Users/ThomasBass/GitHub/GSCE-Coursework-Weblang
 -TrafficLights/Images/Picture13.png>] (./documentation.aux) ) 
 Here is how much of TeX's memory you used:
- 6768 strings out of 493014
- 96484 string characters out of 6133351
- 214461 words of memory out of 5000000
- 10186 multiletter control sequences out of 15000+600000
+ 6778 strings out of 493014
+ 97212 string characters out of 6133351
+ 215461 words of memory out of 5000000
+ 10194 multiletter control sequences out of 15000+600000
  8063 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,11n,43p,894b,1210s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1070,10 +1094,10 @@ e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive
 texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on documentation.pdf (16 pages, 1185022 bytes).
+Output written on documentation.pdf (17 pages, 1392065 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
+ 124 PDF objects out of 1000 (max. 8388607)
+ 64 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

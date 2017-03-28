@@ -21,8 +21,10 @@
 \contentsline {subsection}{\numberline {3.4}(iv) Write a script that uses the array described in part 3.3 to produce an animation of a set of traffic lights such that the lights change in the standard sequence each time the button is clicked.}{9}
 \contentsline {subsubsection}{\numberline {3.4.1}Traffic Light Sequence}{9}
 \contentsline {subsubsection}{\numberline {3.4.2}HTML Layout}{10}
-\contentsline {subsubsection}{\numberline {3.4.3}Styling}{11}
-\contentsline {section}{\numberline {4}Task 4}{12}
-\contentsline {section}{\numberline {5}Task 5}{13}
-\contentsline {subsection}{\numberline {5.1}Embedded JS Scripts}{13}
-\contentsline {subsection}{\numberline {5.2}External JS Scripts}{15}
+\contentsline {subsubsection}{\numberline {3.4.3}Styling and Layout}{11}
+\contentsline {paragraph}{Body and \#container}{11}
+\contentsline {paragraph}{\#Panel, \#FlexItem and \#Button}{12}
+\contentsline {section}{\numberline {4}Task 4}{13}
+\contentsline {section}{\numberline {5}Task 5}{14}
+\contentsline {subsection}{\numberline {5.1}Embedded JS Scripts}{14}
+\contentsline {subsection}{\numberline {5.2}External JS Scripts}{16}
