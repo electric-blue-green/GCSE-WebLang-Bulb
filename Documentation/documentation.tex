@@ -10,6 +10,7 @@
 \usepackage{tabu}
 \usepackage{listings}
 \usepackage[export]{adjustbox}
+\usepackage[table]{xcolor}
 \graphicspath{{/Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/}}
 \DeclareGraphicsExtensions{.png}
 
@@ -148,6 +149,8 @@ This code snippet is again written in JS, and embedded in the same HTML document
 \subsubsection{Output:}
 \noindent\includegraphics[width=1\textwidth, left, width=\linewidth, frame]{Picture6.png} \par \newpage
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Task 3}
 \subsection{(i) Make a list of assets that will be required in order to produce this display.}
 \begin{center}
@@ -155,13 +158,17 @@ This code snippet is again written in JS, and embedded in the same HTML document
   \hline
   Asset Name & Asset Type & Asset Description & Asset Properties	\\ [0.5ex] 
   \hline \hline	
+  Left side container & FlexBox Container & Layout container for left hand side & Invisible \\
+  \hline
+  Traffic light container & FlexBox Container & Layout container for traffic lights & Invisible \\
+  \hline
   Traffic light frame & FlexBox Container & The frame for the traffic lights & Black with White border \\
   \hline
-  Red traffic light & FlexBox Item & The red traffic light & Dimmed Red (\#49180d) \\
+  Red traffic light & FlexBox Item & The red traffic light & Dimmed Red (\#49180d), ID = "red" \\
   \hline
-  Amber traffic light & FlexBox Item & The amber traffic light & Dimmed Amber (\#8f7414) \\
+  Amber traffic light & FlexBox Item & The amber traffic light & Dimmed Amber (\#8f7414), ID = "amber" \\
 	\hline
-	Green traffic light & FlexBox Item & The green traffic light & Dimmed Green (\#0d4913) \\
+	Green traffic light & FlexBox Item & The green traffic light & Dimmed Green (\#0d4913), ID = "green" \\
 	\hline
 	Traffic Light Label & Button & A label for the traffic light, and to help FlexBox spacing & No OnClick event, grey \\
 	\hline
@@ -169,19 +176,77 @@ This code snippet is again written in JS, and embedded in the same HTML document
 	\hline
 	Wait signal button & Button & The button to stop the lights for a pedestrian & Black \\
 	\hline
-	Interval change container & FlexBox Container & The container for the interval change button and text & Invisible \\
+	Right side container & FlexBox Container & The container for the interval change button and text & Invisible \\
 	\hline
 	Interval change button & Button & Button to call the interval time change dialogue box & \#1fadcf \\
 	\hline
 \end{tabular}
 \end{center}
 \subsection{(ii) Describe and explain where the assets will be best located.}
-For this task, as it is a small, single page website, all the scripts and styles will be embedded into the HTML document. The objects will be arranged in \verb|<div>| structures, and items will be inside FlexBoxes.
-FlexBoxes are a CSS Layout style, where flexible boxes contain items. This means that the objects are dynamically aligned, and no positioning is fixed or absolute. This makes it usable on mobile devices as well as a range of screen sizes. It is also adaptable, and easy to adjust. My reaserch primerially came from the W3Schools page on FlexBoxes: http://www.w3schools.com/css/css3_flexbox.asp
-
+For this task, as it is a small, single page website, all the scripts and styles will be embedded into the HTML document. The objects will be arranged in \verb|<div>| structures, and items will be inside FlexBoxes. \par
+FlexBoxes are a CSS Layout style, where flexible boxes contain items. This means that the objects are dynamically aligned, and no positioning is fixed or absolute. This makes it usable on mobile devices as well as a range of screen sizes. It is also adaptable, and easy to adjust. My research primerially came from the W3Schools page on FlexBoxes: http://www.w3schools.com/css/css3\_flexbox.asp \par
+The layout will be in two columns, with the traffic lights and wait button on the left, and the button to change the interval time on the right. The layout is shown in this image: \par
+\noindent\includegraphics[width=0.7\textwidth, center, width=\linewidth, frame]{Picture14.png}
+\subsection{(iii) Describe the structure of an array that could be used to handle the traffic light sequence.}
+I will be using FlexBoxes for my traffic lights instead of images, so it would not be appropriate to store the FlexBox items in an array, as they are structured in a \verb|<div>| arrangement. However, as I will be using JS style changes to change the colours of the traffic lights, it is easier to store these in an array. Here are the colours I will use:
+\begin{center}
+\begin{tabular}{ | m{7em} | m{7em} | m{7em} | }
+  \hline
+  Colour Number & Colour Name & Hex Value \\ [0.5ex] 
+  \hline \hline	
+  0 & Red On & \cellcolor[HTML]{FF0000} \#FF0000 \\
+  \hline
+  1 & Red Off & \cellcolor[HTML]{49180D} \color{white} \#49180D \\
+  \hline
+  2 & Amber On & \cellcolor[HTML]{FDA428} \#FDA428 \\
+  \hline
+  3 & Amber Off & \cellcolor[HTML]{8F7414} \color{white} \#8F7414 \\
+  \hline
+  4 & Green On & \cellcolor[HTML]{00AF1B} \#00AF1B \\
+  \hline
+  5 & Green Off & \cellcolor[HTML]{0d4913} \color{white} \#0D4913 \\
+  \hline
+\end{tabular}
+\end{center}
+Put into an array, this would be: \par
+\verb|var CustomColor = ["#ff0000", "#49180d", "#fda428", "#8f7414", "#00af1b", "#0d4913"]|
+For simplicity, the Red On and Amber On have been substituted for their HTML default colours, \verb|red| and \verb|orange| \par
+\noindent\includegraphics[width=0.7\textwidth, left,]{Picture15.png}
+\subsection{(iv) Write a script that uses the array described in part 3.3 to produce an animation of a set oftraffic lights such that the lights change in the standard sequence each time the button isclicked.}
+\subsubsection{Traffic Light Sequence}
+Firstly, I worked out the sequence of the traffic lights. The sequence is as follows:
+\begin{center}
+\begin{tabular}{ | m{5em} | m{3em} | m{3em} | m{3em} | }
+  \hline
+  Iteration & Red & Amber & Green \\ [0.5ex] 
+  \hline \hline
+  0 & On & Off & Off \\
+  \hline
+  1 & On & On & Off \\
+  \hline
+  2 & Off & Off & On \\
+  \hline
+  3 & Off & On & Off \\
+  \hline
+\end{tabular}
+\end{center}
+I then programmed this into the JS Functions: \par
+\noindent\includegraphics[width=0.5\textwidth, left]{Picture16.png}
+In this code, Line 4 declares \verb|lightchange()| as a function. Lines 5-8 are the if statement for changing the lights to Iteration 0, as the function \verb|lightstate0()|. Lines 9-12 are the if statement for switching to Iteration 1 (\verb|lightstate1()|), and lines 13-16 and 17-20 are for Iteration 2 (\verb|lightstate2()|) and Iteration 3 (\verb|lightstate3()|) respectively. Line 22 then calls \verb|lightchange()| in a timeout loop, as specified by the global variable of \verb|intervalTime|.\par
+Lines 23-26 code for the lights to change to the Stop state (Iteration 0) when \verb|lightstate0()| is called. Lines 28-32 code for the change to Iteration 1 for \verb|lightstate1()|, lines 33-37 for Iteration 2 for \verb|lightstate2()|, and lines 38-42 for the change to Iteration 3 with \verb|lightstate3()|. These all use the \verb|document.GetElementById| function, which addresses each element by their \verb|id| tag as defined in the HTML.
+\subsubsection{HTML Layout}
+For the layout, I used \verb|div| hierarchies to lay out the elements as seen in the layout plan above. \verb|<div>| tags allow elements to be grouped and addressed in CSS. I researched this on the W3Schools website: https://www.w3schools.com/tags/tag\_div.asp . This is the layout structure: \par
+\noindent\includegraphics[width=1\textwidth, left]{Picture17.png}
+The two containers, Left side container and Right side container, are opened in Line 3 and Line 21 with the classes "container" and "inputContainer" respectively. \par
+Inside the Left side container, an unordered list (\verb|<ul>|) to contain the Traffic Light Label (id = "button"), the \verb|<div>| for the Traffic light frame (id = "panel") and the 	Wait signal box (id = "StopButton"). Inside the Traffic light frame, is another \verb|<ul>| for the 3 lights, with id = "red" "amber" and "green", and classes of "flexItem". Inside the Wait signal box, is the paragraph text (id = "stopInfo") for the label, the wait light (id = "wait") and the wait button (id = "stop"). \par
+Inside the Right side container is the \verb|<ul>| for the label (id = "buttonTitle") and the input button (id = "inputButton").
+\subsubsection{Styling}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \section{Task 4}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \section{Task 5}
 Scripts can be embedded in the HTML of web pages or saved externally as script files. Discuss the benefits and drawbacks of each approach.
 \subsection{Embedded JS Scripts}

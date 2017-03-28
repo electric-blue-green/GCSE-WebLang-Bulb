@@ -179,9 +179,9 @@
       </div>
       <br>
       <div class="StopButton">
-      <p id="stopInfo" class="stopInfo">Push button <br> Wait for signal</p>
-      <button id="wait" class="wait" onclick="">...WAIT...</button><br>
-      <button id="stop" class="stop" onclick="stopLights()">Stop Button</button>  
+        <p id="stopInfo" class="stopInfo">Push button <br> Wait for signal</p>
+        <button id="wait" class="wait" onclick="">...WAIT...</button><br>
+        <button id="stop" class="stop" onclick="stopLights()">Stop Button</button>  
       </div>
     </ul>
   </div>
@@ -212,7 +212,6 @@
       stopNow += 1;
     } else {
       if(stopNow != 1) {
-        // RESET ME
         document.getElementById("wait").style.color = "#ececec";
         stopNow = 0;
       }

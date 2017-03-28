@@ -1,0 +1,27 @@
+
+<!doctype html>
+<div class="container">
+    <ul>
+      <button id="button" class="button" onclick="">Traffic Light</button>
+      <div class="panel">
+        <ul style="list-style-type:none">
+          <li id="red" class="flexItem red"></li>
+          <li id="amber" class="flexItem amber"></li>
+          <li id="green" class="flexItem green"></li>
+        </ul>
+      </div>
+      <br>
+      <div class="StopButton">
+        <p id="stopInfo" class="stopInfo">Push button <br> Wait for signal</p>
+        <button id="wait" class="wait" onclick="">...WAIT...</button><br>
+        <button id="stop" class="stop" onclick="stopLights()">Stop Button</button>  
+      </div>
+    </ul>
+  </div>
+  <div class="inputContainer">
+    <ul>
+      <p class="buttonTitle">Click to change interval</p>
+      <button class="inputButton" onclick="inputPrompt()">Change Interval  (milliseconds)</button>
+    </ul>
+  </div>
+
