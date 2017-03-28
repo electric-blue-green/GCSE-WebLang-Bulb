@@ -1,5 +1,5 @@
-#OCR GCSE COMPUTING
-##A452 Practical Investigation
+# OCR GCSE COMPUTING
+## A452 Practical Investigation
 
 [![Documentation](https://img.shields.io/badge/documentation-Draft1-brightgreen.svg)]()
 [![Version](https://img.shields.io/badge/version-1.0-brightgreen.svg)](https://github.com/electric-blue-green/GSCE-Coursework-Weblang-Q3-TrafficLights/releases)
