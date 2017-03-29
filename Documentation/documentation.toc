@@ -23,8 +23,12 @@
 \contentsline {subsubsection}{\numberline {3.4.2}HTML Layout}{10}
 \contentsline {subsubsection}{\numberline {3.4.3}Styling and Layout}{11}
 \contentsline {paragraph}{Body and \#container}{11}
-\contentsline {paragraph}{\#Panel, \#FlexItem and \#Button}{12}
-\contentsline {section}{\numberline {4}Task 4}{13}
-\contentsline {section}{\numberline {5}Task 5}{14}
-\contentsline {subsection}{\numberline {5.1}Embedded JS Scripts}{14}
-\contentsline {subsection}{\numberline {5.2}External JS Scripts}{16}
+\contentsline {paragraph}{Traffic Lights CSS}{12}
+\contentsline {paragraph}{FlexItem CSS}{12}
+\contentsline {subsubsection}{\numberline {3.4.4}JS Pseudocode}{13}
+\contentsline {subsubsection}{\numberline {3.4.5}Full Code}{14}
+\contentsline {subsubsection}{\numberline {3.4.6}Live Run}{15}
+\contentsline {section}{\numberline {4}Task 4}{16}
+\contentsline {section}{\numberline {5}Task 5}{17}
+\contentsline {subsection}{\numberline {5.1}Embedded JS Scripts}{17}
+\contentsline {subsection}{\numberline {5.2}External JS Scripts}{19}

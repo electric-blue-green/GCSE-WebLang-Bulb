@@ -248,9 +248,66 @@ Task 3 only requires a button to change Iterations, so the automatic code, inter
 ~\par
 \noindent\includegraphics[width=0.5\textwidth, left]{Picture18.png}
 The body styles for the WebKit Flex Wrap in Lines 11-15, content is aligned centre in Line 16, and Lines 17-20 code for no padding or margins, and 100\% width. \#container\textgreater ul codes for the \verb|<ul>| inside the container. It codes for no list style, and 100\% width. The \#container codes for the WebKit Flex Align and automatic margins and alignment. \newpage
-\paragraph{\#panel, \#flexItem and \#button}
+\paragraph{Traffic Lights CSS}
 ~\par
-\noindent\includegraphics[width=0.5\textwidth, left]{Picture19.png}
+\noindent\includegraphics[width=0.5\textwidth, left]{Picture20.png} \par
+This section simply styles for the three traffic lights, with their starting colours
+\paragraph{FlexItem CSS}
+~\par
+\noindent\includegraphics[width=0.5\textwidth, left]{Picture21.png} \par
+This snippet styles for the size of the traffic lights to be 100px by 100px, and for the margin to be 10px in Lines 59-61, and the FlexItem code in Lines 62-66, and for the border to be 50\%, meaning it is a circle, in Line 68. \newpage
+\subsubsection{JS Pseudocode}	
+\begin{lstlisting}
+VARIABLE Status = 1
+VARIABLE lightstate = 0
+DEFINE FUNCTION lightchange
+	IF lightstate = 0
+		CALL FUNCTION lightstate0
+		VARIABLE light state = 1
+	ELSE IF lightstate = 1
+		CALL FUNCTION lightstate1
+		VARIABLE lightstate = 2
+	ELSE IF lightstate = 2
+		CALL FUNCTION lightstate3
+		VARIABLE lightstate = 3
+	ELSE IF lightstate = 3
+		CALL FUNCTION lightstate3
+		VARIABLE lightstate = 0
+	ENF IF
+END DEFINE
+DEFINE FUNCTION lightstate0
+	GET ELEMENT "red" STYLE Background = red
+	GET ELEMENT "amber" STYLE Background = #8f7414
+	GET ELEMENT "green" STYLE Background = #0d4913
+END DEFINE
+DEFINE FUNCTION lightstate1
+	GET ELEMENT "red" STYLE Background = red
+	GET ELEMENT "amber" STYLE Background = orange
+	GET ELEMENT "green" STYLE Background = #0d4913
+END DEFINE
+DEFINE FUNCTION lightstate2
+	GET ELEMENT "red" STYLE Background = #49180d
+	GET ELEMENT "amber" STYLE Background = #8f7414
+	GET ELEMENT "green" STYLE Background = green
+END DEFINE
+DEFINE FUNCTION lightstate3
+	GET ELEMENT "red" STYLE Background = #49180d
+	GET ELEMENT "amber" STYLE Background = orange
+	GET ELEMENT "green" STYLE Background = #0d4913
+END DEFINE
+CALL FUNCTION lightchange
+\end{lstlisting}
+\subsubsection{Full Code}
+\noindent\includegraphics[width=0.57\textwidth, left]{Picture22.png} \par
+\subsubsection{Live Run}
+The code was entered into a HTML document and opened in Safari. Screenshots: \par
+\noindent\includegraphics[width=0.57\textwidth, left]{Picture23.png} \par
+\noindent\includegraphics[width=0.57\textwidth, left]{Picture24.png} \par
+\noindent\includegraphics[width=0.57\textwidth, left]{Picture25.png} \par
+\noindent\includegraphics[width=0.57\textwidth, left]{Picture26.png} \par
+A video can be viewed at this link:
+https://www.screencast.com/t/8PqsezAx
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{Task 4}
