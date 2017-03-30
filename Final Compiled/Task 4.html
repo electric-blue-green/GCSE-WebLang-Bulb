@@ -1,0 +1,287 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"></meta>
+  <meta name="viewport" content="width=device-width"></meta>
+  <title>JS Bin</title>
+</head>
+<body>
+  <style>
+    .intervalTimer{
+      color: white;
+    }
+    body {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-align-content: center;
+      align-content: center;
+      padding: 0;
+      margin: 0;
+      min-height: 100vH;
+      background: linear-gradient(#2ebbb0, #41bae7);
+      background-size: 100% 100vH
+    }
+    .container>ul{
+      list-style: none;
+      padding: 0px;
+    }
+    .container {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-align-content: right;
+      align-content: right;
+      margin: auto;
+    }
+    .panel {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-align-content: wrap;
+      align-content: wrap;
+      margin: auto;
+      background-color: black;
+      justify-content: center;
+      border-radius: 6px;
+      border-color: white;
+      border-width: 14px;
+      border-style: solid;
+    }
+    .panel>ul{
+      list-style: none;
+      padding: 0px;
+    }
+    .flexItem {
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-align-content: center;
+      align-content: center;
+      margin: 10px;
+      border-radius: 50%;
+    }
+    .button {
+      color: white;
+      font-size: 30px;
+      border-radius: 10px;
+      border: 0;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-align-content: center;
+      align-content: center;
+      -webkit-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      border-style: solid;
+      margin-bottom: 8px;
+    } 
+    .stop {
+      background-color: black;
+      color: white;
+      font-size: 30px;
+      border-radius: 10px;
+      border: 0;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-align-content: center;
+      align-content: center;
+      -webkit-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      border-style: solid;
+      margin-bottom: 8px;
+      text-align: center; 
+    } 
+     .wait {
+      background-color: black;
+      color: gray;
+      font-size: 30px;
+      border-radius: 10px;
+      border: 0;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-align-content: center;
+      align-content: center;
+      border-style: solid;
+      margin-bottom: 8px;
+      text-align: center; 
+      font-family: bold;
+      font-size: 40px;
+    } 
+    .red{
+      background-color: red;
+    }
+    .amber{
+      background-color: #8f7414;
+    }
+    .green{
+      background-color: #0d4913;
+    }
+    .inputContainer{  
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-align-content: left;
+      align-content: left;
+      margin: auto;
+    }
+    .inputButton {
+      background-color: #1fadcf;
+      color: white;
+      font-size: 26px;
+      border-radius: 10px;
+      border: 0;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-align-content: center;
+      align-content: center;
+      -webkit-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      border-style: solid;
+      margin-bottom: 8px;
+    } 
+    .inputButton:hover {
+      background-color: #2c72ad;
+    } 
+    .buttonTitle{
+      text-align: center;
+      color: white;
+      font-size: 27spx;
+    }
+    .stopInfo{
+      text-align: center;
+      font-size: 19px;
+    }
+    .StopButton{
+      background-color: black;
+      color: white;
+      border-radius: 8px;
+    }
+  </style>
+  <div class="container">
+    <ul>
+      <button id="button" class="button" onclick="">Traffic Light</button>
+      <div class="panel">
+        <ul style="list-style-type:none">
+          <li id="red" class="flexItem red"></li>
+          <li id="amber" class="flexItem amber"></li>
+          <li id="green" class="flexItem green"></li>
+        </ul>
+      </div>
+      <br>
+      <div class="StopButton">
+        <p id="stopInfo" class="stopInfo">Push button <br> Wait for signal</p>
+        <button id="wait" class="wait" onclick="">...WAIT...</button><br>
+        <button id="stop" class="stop" onclick="stopLights()">Stop Button</button>  
+      </div>
+    </ul>
+  </div>
+  <div class="inputContainer">
+    <ul>
+      <p class="buttonTitle">Click to change interval</p>
+      <button class="inputButton" onclick="inputPrompt()">Change Interval  (milliseconds)</button>
+    </ul>
+  </div>
+</body>
+<script>
+  var tempInterval = 0
+  var stopNow = 0;
+  function stopLights(){
+    document.getElementById("wait").style.color = CustomColor[2];
+    window.stopNow = 1;
+  }
+  var CustomColor = ["red", "#49180d", "orange", "#8f7414", "#00af1b", "#0d4913"]
+  var intervalTime = 5000;
+  function inputPrompt(){
+    window.intervalTime = prompt("Enter timer interval (milliseconds)", window.intervalTime)
+  }
+  var status = 1;
+  var lightstate = 0;
+  var pedestrianTime = 3;
+  function lightchange(){
+    if (stopNow != 0 && stopNow != Math.ceil(pedestrianTime*1000/window.intervalTime)+1 && lightstate == 1 ){
+      stopNow += 1;
+    } else {
+      if(stopNow != 1) {
+        document.getElementById("wait").style.color = "#ececec";
+        stopNow = 0;
+      }
+      if (lightstate == 0){
+        lightstate0();
+        lightstate = 1;
+      }
+      else if (lightstate == 1){
+        lightstate1();
+        lightstate = 2;
+      }
+      else if (lightstate == 2){
+        lightstate2()
+        lightstate = 3;
+      }
+      else if (lightstate == 3){
+        lightstate3()
+        lightstate = 0;
+      }
+    }
+    setTimeout(function(){lightchange()}, window.intervalTime)
+  }
+  function lightstate0(){
+    document.getElementById("red").style.backgroundColor = CustomColor[0];
+    document.getElementById("amber").style.backgroundColor = CustomColor[3];
+    document.getElementById("green").style.backgroundColor = CustomColor[5];
+  }
+  function lightstate1(){
+    document.getElementById("red").style.backgroundColor = CustomColor[0];
+    document.getElementById("amber").style.backgroundColor = CustomColor[2];
+    document.getElementById("green").style.backgroundColor = CustomColor[5];
+  }
+  function lightstate2(){
+    document.getElementById("red").style.backgroundColor = CustomColor[1];
+    document.getElementById("amber").style.backgroundColor = CustomColor[3];
+    document.getElementById("green").style.backgroundColor = CustomColor[4];
+  }
+  function lightstate3(){
+    document.getElementById("red").style.backgroundColor = CustomColor[1];
+    document.getElementById("amber").style.backgroundColor = CustomColor[2];
+    document.getElementById("green").style.backgroundColor = CustomColor[5];
+  }
+  lightchange();
+</script>
+</html>
+
+
+<!--    NOTES             -->
+<!--
+
+      
+      
+                          -->
+
+<!--    Colour Palette     -->
+<!--
+    0   red on:     red
+    1   red off:    49180d
+    2   amber on:   orange
+    3   amber off   8f7414
+    4   green on:   00af1b
+    5   green off:  0d4913
+                           -->
+
+
+<!--    Bibliography     -->
+<!--
+    Text Alignment        http://www.w3schools.com/cssref/pr_text_text-align.asp
+    Flex Boxes            http://www.w3schools.com/css/css3_flexbox.asp
+    Flex Content Justify  https://www.kirupa.com/html5/centering_vertically_horizontally.htm
+    Flex Content Align    https://davidwalsh.name/css-vertical-center-flexbox
+
+                                                                                              -->

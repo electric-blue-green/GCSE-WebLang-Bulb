@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>JS Bin</title>
+</head>
+<body>
+  <style>
+    body{
+      background-color: #ececec;
+    }
+    h3 {
+      font-family: arial;
+      color: #3581df;
+    }
+    body {
+      font-family: arial;
+      color: #39ccd2;
+    }
+  </style>
+
+  <h3>Alphabetical:</h3>
+
+  <script>
+    var products = ["Printer","Tablet","Router","Network Switch","Monitor",
+    "Keyboard","Mouse","500GB Hard Drive","ATX Motherboard","Memory Card",
+    "Flash Drive","Network Switch","Bluetooth Adaptor","Modem","Wireless Speaker", "256GB SSD"];
+    function sortProducts(){
+      temp = products.sort();
+      document.write(temp.join('<br/>'));
+    }
+    sortProducts();
+  </script>
+  <h3>Length of Array:</h3>
+  <script>
+    function printLength(){
+      document.write(products.length);
+    }
+    printLength()
+  </script>
+</body>
+</html>
+
+
+
