@@ -14,7 +14,7 @@
 \graphicspath{{/Users/ThomasBass/GitHub/GSCE-Coursework-Weblang-TrafficLights/Images/}}
 \DeclareGraphicsExtensions{.png}
 \title{Computing GCSE Coursework}
-\author{\\ \\ \\ \\ Thomas Bass\\Candidate 4869\\Centre 52423\\OCR A452 Practical Investication\\\\Word Count: 1778\\\\Made with \LaTeX}
+\author{\\ \\ \\ \\ Thomas Bass\\Candidate 4869\\Centre 52423\\OCR A452 Practical Investigation\\\\Word Count: 1778\\\\Made with \LaTeX}
 \date{2017}
 \pagestyle{fancy}
 \fancyhf{}
@@ -69,7 +69,7 @@ The web page took the code entered, ran it, and produced this output.
 12	</body>
 13	</html>
 \end{lstlisting}
-\subsubsection{Commentry:}
+\subsubsection{Commentary:}
 \begin{lstlisting}
 01	This declares that the document is a HTML document
 02	This opens the <html> tag, and shows that the code enclosed 
@@ -162,7 +162,7 @@ clicked, the lights change according to the sequence.
 \end{center}
 \subsection{(ii) Describe and explain where the assets will be best located.}
 For this task, as it is a small, single page website, all the scripts and styles will be embedded into the HTML document. The objects will be arranged in \verb|<div>| structures, and items will be inside FlexBoxes. \par
-FlexBoxes are a CSS Layout style, where flexible boxes contain items. This means that the objects are dynamically aligned, and no positioning is fixed or absolute. This makes it usable on mobile devices as well as a range of screen sizes. It is also adaptable, and easy to adjust. My research primerially came from the W3Schools page on FlexBoxes: http://www.w3schools.com/css/css3\_flexbox.asp \par
+FlexBoxes are a CSS Layout style, where flexible boxes contain items. This means that the objects are dynamically aligned, and no positioning is fixed or absolute. This makes it usable on mobile devices as well as a range of screen sizes. It is also adaptable, and easy to adjust. My research primarily came from the W3Schools page on FlexBoxes: http://www.w3schools.com/css/css3\_flexbox.asp \par
 The layout will be in two columns, with the traffic lights and wait button on the left, and the button to change the interval time on the right. The layout is shown in this image: \par
 \noindent\includegraphics[width=0.7\textwidth, center, width=\linewidth, frame]{Picture14.png}
 \subsection{(iii) Describe the structure of an array that could be used to handle the traffic light sequence.}
@@ -353,6 +353,13 @@ CALL FUNCTION lightchange()
 \noindent\includegraphics[width=1\textwidth, left]{Picture28.png} \par
 \noindent\includegraphics[width=1\textwidth, left]{Picture29.png} \par \newpage
 \subsection{Full Run}
+A video of the full run can be found here: https://www.screencast.com/t/gexVA0T3YM
+\paragraph{Stills} ~\par
+\noindent\includegraphics[width=0.8\textwidth, left]{Picture30.png} \par 
+Detail of wait button activated: \par \par
+\noindent\includegraphics[width=0.2\textwidth, left]{Picture31.png} \par 
+Dialogue box: \par
+\noindent\includegraphics[width=1\textwidth, left]{Picture32.png} \par 
 \newpage
 \section{Task 5}
 Scripts can be embedded in the HTML of web pages or saved externally as script files. Discuss the benefits and drawbacks of each approach.
@@ -374,7 +381,7 @@ This shows the \verb|change()| function moved to the external file. This program
 And this is the output after the button was clicked: \par
 \noindent\includegraphics[width=1\textwidth, left, width=\linewidth, frame]{Picture13.png} 
 As you can see, this produces the exact same results. So what are the benefits and drawbacks of each approach? \par \par
-The embedded script approach is more suitable to small projects, such as a personal portfolio or small website. Having it all saved to the same file can make it a lot easier to manage, as well as preserving consistency and ensuring no failures. However, for larger tasks like a web app or large website, external scripts are often more applicable. \par
+The embedded script approach is more suitable to small projects, such as a personal portfolio or small website. Having the CSS, HTML and JS all saved to the same file can make it a lot easier to manage, as well as preserving consistency and ensuring no failures. However, for larger tasks like a web app or large website, external scripts are often more applicable. \par
 With an external script, pre-made code can be referenced from the HTML document and used elsewhere. This limits the size of the HTML document and makes it a lot tidier and easier to have consistent indentation. Websites like www.dynamicdrive.com offer scripts for both JS and CSS that can be embedded into the code easily. These off-the-shelf snippets are useful in small-scale webpages and can be embedded or saved externally, but are normally embedded. \par
-I prefer to use embedded scripts, as I often code small-scale projects and it is easier to have it all in the same document. However, if a project gets to large, I will move my JS and CSS to an external file for consistency, and to reduce the time it takes for a page to load.
+I prefer to use embedded scripts, as I often code small-scale projects and it is easier to have it all in the same document. However, if a project gets too large, I will move my JS and CSS to an external file for consistency, and to reduce the time it takes for a page to load.
 \end{document}
