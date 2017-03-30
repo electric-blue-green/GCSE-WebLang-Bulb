@@ -152,6 +152,7 @@ This code snippet is again written in JS, and embedded in the same HTML document
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Task 3}
+It is possible to display a traffic light sequence on a web page. When the button 'Change lights' isclicked, the lights change according to the sequence.
 \subsection{(i) Make a list of assets that will be required in order to produce this display.}
 \begin{center}
 \begin{tabular}{ | m{9em} | m{10em} | m{15em} | m{8em} | }
@@ -295,10 +296,9 @@ DEFINE FUNCTION lightstate3
 	GET ELEMENT "amber" STYLE Background = orange
 	GET ELEMENT "green" STYLE Background = #0d4913
 END DEFINE
-CALL FUNCTION lightchange
 \end{lstlisting}
 \subsubsection{Full Code}
-\noindent\includegraphics[width=0.57\textwidth, left]{Picture22.png} \par
+\noindent\includegraphics[width=0.46\textwidth, left]{Picture22.png} \par
 \subsubsection{Live Run}
 The code was entered into a HTML document and opened in Safari. Screenshots: \par
 \noindent\includegraphics[width=0.57\textwidth, left]{Picture23.png} \par
@@ -311,6 +311,72 @@ https://www.screencast.com/t/8PqsezAx
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{Task 4}
+Change the animation script so that the sequence of lights is displayed automatically on a timed basis without user input.
+\subsection{Changes to JS Code}
+In Task 3, the function \verb|lightchange()| was triggered by the Toggle Lights button. To adapt this to automatic change, a \verb|Timeout| function can be used to repeatedly call the function with a set timer. For this, the timer can be a variable that can be changed. To change it, I will use a dialogue box using the built-in \verb|prompt| function in JS.
+I have also included the code for the wait button for pedestrians. This calls a function that delays the red light change for 1 Iteration.
+\subsection{JS Pseudocode}
+\begin{lstlisting}
+VARIABLE Status = 1
+VARIABLE lightstate = 0
+DEFINE FUNCTION lightchange
+	IF stopNow != 0 
+		AND stopNow != ceiling(pedestrianTime*1000/intervalTime)+1 
+		AND lightstate = 1
+		stopNow = stopNow+1
+	ELSE
+		IF stopNow != 1
+			GET ELEMENT "wait" STYLE Background = #ececec
+		ELSE IF lightstate = 0
+			CALL FUNCTION lightstate0
+			VARIABLE light state = 1
+		ELSE IF lightstate = 1
+			CALL FUNCTION lightstate1
+			VARIABLE lightstate = 2
+		ELSE IF lightstate = 2
+			CALL FUNCTION lightstate3
+			VARIABLE lightstate = 3
+		ELSE IF lightstate = 3
+			CALL FUNCTION lightstate3
+			VARIABLE lightstate = 0
+		ENF IF
+END DEFINE
+DEFINE FUNCTION lightstate0
+	GET ELEMENT "red" STYLE Background = CustomColor[0]
+	GET ELEMENT "amber" STYLE Background = CustomColor[3]
+	GET ELEMENT "green" STYLE Background = CustomColor[5]
+END DEFINE
+DEFINE FUNCTION lightstate1
+	GET ELEMENT "red" STYLE Background = CustomColor[0]
+	GET ELEMENT "amber" STYLE Background = CustomColor[2]
+	GET ELEMENT "green" STYLE Background = CustomColor[5]
+END DEFINE
+DEFINE FUNCTION lightstate2
+	GET ELEMENT "red" STYLE Background = CustomColor[1]
+	GET ELEMENT "amber" STYLE Background = CustomColor[2]
+	GET ELEMENT "green" STYLE Background = CustomColor[4]
+END DEFINE
+DEFINE FUNCTION lightstate3
+	GET ELEMENT "red" STYLE Background = CustomColor[1]
+	GET ELEMENT "amber" STYLE Background = CustomColor[2]
+	GET ELEMENT "green" STYLE Background = CustomColor[5]
+END DEFINE
+DEFINE FUNCTION inputPrompt
+	Prompt "Enter timer interval (milliseconds)"
+	VARIABLE intervalTime = Prompt
+END DEFINE
+DEFINE FUNCTION stopLights
+	GET ELEMENT "wait" STYLE Background = CustomColor[2]
+	VARIABLE stopNow = 0
+END FUNCTION
+CALL FUNCTION lightchange()
+\end{lstlisting}
+\subsection{Full Code}
+\noindent\includegraphics[width=1\textwidth, left]{Picture27.png} \par
+\noindent\includegraphics[width=1\textwidth, left]{Picture28.png} \par
+\noindent\includegraphics[width=1\textwidth, left]{Picture29.png} \par \newpage
+\subsection{Full Run}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage

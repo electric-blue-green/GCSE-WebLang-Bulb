@@ -29,6 +29,10 @@
 \contentsline {subsubsection}{\numberline {3.4.5}Full Code}{14}
 \contentsline {subsubsection}{\numberline {3.4.6}Live Run}{15}
 \contentsline {section}{\numberline {4}Task 4}{16}
-\contentsline {section}{\numberline {5}Task 5}{17}
-\contentsline {subsection}{\numberline {5.1}Embedded JS Scripts}{17}
-\contentsline {subsection}{\numberline {5.2}External JS Scripts}{19}
+\contentsline {subsection}{\numberline {4.1}Changes to JS Code}{16}
+\contentsline {subsection}{\numberline {4.2}JS Pseudocode}{16}
+\contentsline {subsection}{\numberline {4.3}Full Code}{17}
+\contentsline {subsection}{\numberline {4.4}Full Run}{19}
+\contentsline {section}{\numberline {5}Task 5}{20}
+\contentsline {subsection}{\numberline {5.1}Embedded JS Scripts}{20}
+\contentsline {subsection}{\numberline {5.2}External JS Scripts}{22}
